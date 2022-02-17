@@ -1,6 +1,5 @@
-import Foundation
 import Alamofire
-class ApiManager{
+final class ApiManager{
     static let instance = ApiManager()
     enum Constans {
         static let baseURL = "https://rest.coinapi.io/v1"
@@ -8,14 +7,9 @@ class ApiManager{
     enum EndPoint {
         static let assets = "/assets"
     }
-    let header: HTTPHeaders = ["X-CoinAPI-Key":
+   private let header: HTTPHeaders = ["X-CoinAPI-Key":
                                 "2D5456EB-D37B-4609-A828-04362AD282FA" ,
                                "Accept" : "application/json"]
-    func getJSON() {
-        AF.request(Constans.baseURL + EndPoint.assets, headers: header).responseJSON{ response in
-            print(response)
-        }
-    }
     func getAllExchanges(complition: @escaping (([CoinClientModel])) -> Void){
         AF.request(Constans.baseURL + EndPoint.assets,
                    method: .get,
