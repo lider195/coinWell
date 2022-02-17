@@ -4,8 +4,8 @@ final class CoinTableViewCell: UITableViewCell {
     // MARK: Public
     // MARK: Private
     private let colorView = UIView()
-    private var nameOfCriptoLabel = UILabel()
-    private var valueOfCriptoLabel = UILabel()
+    private let nameOfCriptoLabel = UILabel()
+    private let valueOfCriptoLabel = UILabel()
     // MARK: - Lifecycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

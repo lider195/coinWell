@@ -1,16 +1,21 @@
 import UIKit
+import ViewAnimator
 final class ViewController: UIViewController {
     // MARK: - Properties
     // MARK: Public
     // MARK: Private
     private let exchangeRatesLabel = UILabel()
-    private var coinTableView = UITableView()
+    private let coinTableView = UITableView()
     private var arrayOfCripto: [CoinClientModel] = [] {
         didSet {
             coinTableView.reloadData()
         }
     }
     private let reuseidentifier = "CoinTableViewCell"
+    let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
+    let zoomAnimation = AnimationType.zoom(scale: 5)
+    let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/10)
+ 
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +62,8 @@ final class ViewController: UIViewController {
         exchangeRatesLabel.textAlignment = .left
         exchangeRatesLabel.font = .systemFont(ofSize: 35, weight: .bold)
         exchangeRatesLabel.text = "Exchange Rates"
+//        let animation = AnimationType.from(direction: .bottom , offset: 350.0)
+//        view.animate(animations: [animation])
     }
     
     // MARK: - Helpers
@@ -67,6 +74,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         tableView.register(CoinTableViewCell.self, forCellReuseIdentifier: reuseidentifier)
+        let cells = tableView.visibleCells(in: 0)
+        UIView.animate(views: cells, animations: [rotateAnimation])
+//        UIView.animate(views: tableView.visibleCells,
+//                       animations: [fromAnimation, zoomAnimation],
+//                       delay: -15)
         if let cell = tableView.dequeueReusableCell(
             withIdentifier: reuseidentifier, for: indexPath
         ) as? CoinTableViewCell {
