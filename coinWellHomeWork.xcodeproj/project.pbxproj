@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68BF327D2620C787DF0A3730 /* Pods_coinWellHomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90BBDB203AB8E2FEFCEFB58 /* Pods_coinWellHomeWork.framework */; };
+		DD3CCA2627BE432F00FA18FF /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3CCA2527BE432F00FA18FF /* CoinTableViewCell.swift */; };
 		DDEADC3B27BE33F60040D95A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEADC3A27BE33F60040D95A /* AppDelegate.swift */; };
 		DDEADC3D27BE33F60040D95A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEADC3C27BE33F60040D95A /* SceneDelegate.swift */; };
 		DDEADC3F27BE33F60040D95A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEADC3E27BE33F60040D95A /* ViewController.swift */; };
 		DDEADC4227BE33F60040D95A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEADC4027BE33F60040D95A /* Main.storyboard */; };
 		DDEADC4427BE33F80040D95A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEADC4327BE33F80040D95A /* Assets.xcassets */; };
 		DDEADC4727BE33F80040D95A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEADC4527BE33F80040D95A /* LaunchScreen.storyboard */; };
+		DDEADC5227BE38A20040D95A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEADC5127BE38A20040D95A /* ApiManager.swift */; };
+		DDEADC5427BE3B690040D95A /* CoinServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEADC5327BE3B690040D95A /* CoinServerModel.swift */; };
+		DDEADC5627BE3C340040D95A /* CoinClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEADC5527BE3C340040D95A /* CoinClientModel.swift */; };
+		DDEADC5827BE3C700040D95A /* ModelConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEADC5727BE3C700040D95A /* ModelConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16BEAFA7393041573F42DC22 /* Pods-coinWellHomeWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coinWellHomeWork.release.xcconfig"; path = "Target Support Files/Pods-coinWellHomeWork/Pods-coinWellHomeWork.release.xcconfig"; sourceTree = "<group>"; };
+		7448C657D2A83DECE3017A72 /* Pods-coinWellHomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coinWellHomeWork.debug.xcconfig"; path = "Target Support Files/Pods-coinWellHomeWork/Pods-coinWellHomeWork.debug.xcconfig"; sourceTree = "<group>"; };
+		A90BBDB203AB8E2FEFCEFB58 /* Pods_coinWellHomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coinWellHomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3CCA2527BE432F00FA18FF /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 		DDEADC3727BE33F60040D95A /* coinWellHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coinWellHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEADC3A27BE33F60040D95A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDEADC3C27BE33F60040D95A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,10 @@
 		DDEADC4327BE33F80040D95A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDEADC4627BE33F80040D95A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDEADC4827BE33F80040D95A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDEADC5127BE38A20040D95A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		DDEADC5327BE3B690040D95A /* CoinServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinServerModel.swift; sourceTree = "<group>"; };
+		DDEADC5527BE3C340040D95A /* CoinClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinClientModel.swift; sourceTree = "<group>"; };
+		DDEADC5727BE3C700040D95A /* ModelConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BF327D2620C787DF0A3730 /* Pods_coinWellHomeWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D812C215A4EC51363F013BD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7448C657D2A83DECE3017A72 /* Pods-coinWellHomeWork.debug.xcconfig */,
+				16BEAFA7393041573F42DC22 /* Pods-coinWellHomeWork.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD3CCA2427BE430C00FA18FF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD3CCA2527BE432F00FA18FF /* CoinTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		DDEADC2E27BE33F60040D95A = {
 			isa = PBXGroup;
 			children = (
 				DDEADC3927BE33F60040D95A /* coinWellHomeWork */,
 				DDEADC3827BE33F60040D95A /* Products */,
+				D812C215A4EC51363F013BD1 /* Pods */,
+				EAC0AEA02B4C2C37620D928C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +90,52 @@
 		DDEADC3927BE33F60040D95A /* coinWellHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				DDEADC5027BE387A0040D95A /* Model */,
+				DDEADC4F27BE38740040D95A /* View */,
+				DDEADC4E27BE38670040D95A /* Controller */,
+				DDEADC4327BE33F80040D95A /* Assets.xcassets */,
 				DDEADC3A27BE33F60040D95A /* AppDelegate.swift */,
 				DDEADC3C27BE33F60040D95A /* SceneDelegate.swift */,
-				DDEADC3E27BE33F60040D95A /* ViewController.swift */,
-				DDEADC4027BE33F60040D95A /* Main.storyboard */,
-				DDEADC4327BE33F80040D95A /* Assets.xcassets */,
-				DDEADC4527BE33F80040D95A /* LaunchScreen.storyboard */,
 				DDEADC4827BE33F80040D95A /* Info.plist */,
 			);
 			path = coinWellHomeWork;
+			sourceTree = "<group>";
+		};
+		DDEADC4E27BE38670040D95A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDEADC3E27BE33F60040D95A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DDEADC4F27BE38740040D95A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDEADC4027BE33F60040D95A /* Main.storyboard */,
+				DDEADC4527BE33F80040D95A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDEADC5027BE387A0040D95A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD3CCA2427BE430C00FA18FF /* Cell */,
+				DDEADC5127BE38A20040D95A /* ApiManager.swift */,
+				DDEADC5327BE3B690040D95A /* CoinServerModel.swift */,
+				DDEADC5527BE3C340040D95A /* CoinClientModel.swift */,
+				DDEADC5727BE3C700040D95A /* ModelConverter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAC0AEA02B4C2C37620D928C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A90BBDB203AB8E2FEFCEFB58 /* Pods_coinWellHomeWork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDEADC4B27BE33F80040D95A /* Build configuration list for PBXNativeTarget "coinWellHomeWork" */;
 			buildPhases = (
+				B066F512FB71DCFA564748BE /* [CP] Check Pods Manifest.lock */,
 				DDEADC3327BE33F60040D95A /* Sources */,
 				DDEADC3427BE33F60040D95A /* Frameworks */,
 				DDEADC3527BE33F60040D95A /* Resources */,
+				33C0E1B38F0EBECCAEF02300 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +206,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33C0E1B38F0EBECCAEF02300 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coinWellHomeWork/Pods-coinWellHomeWork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coinWellHomeWork/Pods-coinWellHomeWork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coinWellHomeWork/Pods-coinWellHomeWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B066F512FB71DCFA564748BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coinWellHomeWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DDEADC3327BE33F60040D95A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDEADC5227BE38A20040D95A /* ApiManager.swift in Sources */,
 				DDEADC3F27BE33F60040D95A /* ViewController.swift in Sources */,
+				DDEADC5427BE3B690040D95A /* CoinServerModel.swift in Sources */,
+				DDEADC5827BE3C700040D95A /* ModelConverter.swift in Sources */,
+				DDEADC5627BE3C340040D95A /* CoinClientModel.swift in Sources */,
 				DDEADC3B27BE33F60040D95A /* AppDelegate.swift in Sources */,
+				DD3CCA2627BE432F00FA18FF /* CoinTableViewCell.swift in Sources */,
 				DDEADC3D27BE33F60040D95A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +404,7 @@
 		};
 		DDEADC4C27BE33F80040D95A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7448C657D2A83DECE3017A72 /* Pods-coinWellHomeWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +433,7 @@
 		};
 		DDEADC4D27BE33F80040D95A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16BEAFA7393041573F42DC22 /* Pods-coinWellHomeWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
