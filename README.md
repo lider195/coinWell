@@ -4,7 +4,7 @@
 \*  `AlamoFire`\
 \*  `Converter`\
 \*  `SearchController`\
-\*  `ActivityIndicator`\
+\*  `ActivityIndicator`
 
 ---
  ![logo](https://i.yapx.ru/Q9FfN.gif)
