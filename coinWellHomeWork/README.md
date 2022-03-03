@@ -1,11 +1,11 @@
 #  CoinWell
-
-/*: 
-\*  `AlamoFire`
-\*  `Converter`
-\*  `SearchController`
-\*  `ActivityIndicator`
+---
+/*:
+\*  `AlamoFire`\
+\*  `Converter`\
+\*  `SearchController`\
+\*  `ActivityIndicator`\
 */
+---
+ ![logo](https://i.yapx.ru/Q9FfN.gif)
 
- ![Swift Small](1.png)
- ![Swift Small](2.png)
