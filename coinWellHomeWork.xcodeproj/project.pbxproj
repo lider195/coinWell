@@ -26,6 +26,7 @@
 		7448C657D2A83DECE3017A72 /* Pods-coinWellHomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coinWellHomeWork.debug.xcconfig"; path = "Target Support Files/Pods-coinWellHomeWork/Pods-coinWellHomeWork.debug.xcconfig"; sourceTree = "<group>"; };
 		A90BBDB203AB8E2FEFCEFB58 /* Pods_coinWellHomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coinWellHomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3CCA2527BE432F00FA18FF /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
+		DD6C04B927D0C6F7004213C5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DDEADC3727BE33F60040D95A /* coinWellHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coinWellHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEADC3A27BE33F60040D95A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDEADC3C27BE33F60040D95A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 				DDEADC3A27BE33F60040D95A /* AppDelegate.swift */,
 				DDEADC3C27BE33F60040D95A /* SceneDelegate.swift */,
 				DDEADC4827BE33F80040D95A /* Info.plist */,
+				DD6C04B927D0C6F7004213C5 /* README.md */,
 			);
 			path = coinWellHomeWork;
 			sourceTree = "<group>";
@@ -104,6 +106,7 @@
 		DDEADC4E27BE38670040D95A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DD3CCA2427BE430C00FA18FF /* Cell */,
 				DDEADC3E27BE33F60040D95A /* ViewController.swift */,
 			);
 			path = Controller;
@@ -121,7 +124,6 @@
 		DDEADC5027BE387A0040D95A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DD3CCA2427BE430C00FA18FF /* Cell */,
 				DDEADC5127BE38A20040D95A /* ApiManager.swift */,
 				DDEADC5327BE3B690040D95A /* CoinServerModel.swift */,
 				DDEADC5527BE3C340040D95A /* CoinClientModel.swift */,

@@ -17,11 +17,11 @@ final class CoinTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     // MARK: - API
-    func set(data: CoinClientModel) {
-        nameOfCriptoLabel.text = data.name
-         let price = data.priceUsd  
-        valueOfCriptoLabel.text = "$\(NSString(format: "%.3f", price))"
-    }
+        func set(_ name: String, _ priceUsd: Double) {
+            nameOfCriptoLabel.text = name
+             let price = priceUsd
+            valueOfCriptoLabel.text = "💲\(NSString(format: "%.3f", price))"
+        }
     // MARK: - Setups
     private func addSubviews() {
         contentView.addSubview(colorView)
@@ -58,6 +58,4 @@ final class CoinTableViewCell: UITableViewCell {
         valueOfCriptoLabel.textAlignment = .right
         valueOfCriptoLabel.font = .systemFont(ofSize: 20, weight: .medium)
     }
-    // MARK: - Helpers
 }
-
